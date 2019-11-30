@@ -1,0 +1,309 @@
+h1,h2,h3 {
+	font-weight: lighter;
+	margin-top: 20px;
+	padding-right: 5%;
+}
+h1 {
+	margin-top: 50px;
+}
+.history a {
+	text-decoration: underline;
+}
+.wrapper_content p {
+	margin: 20px 0;
+	color: #434343;
+	line-height: 1.4em;
+	text-align: justify;
+	padding-right: 5%;
+}
+.wrapper_content .image {
+	width: 100%;
+}
+strong {
+	color: black;
+}
+.history {
+	display: flex;
+}
+.history p {
+	margin: 0;
+}
+.stick { 
+	margin: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+ .wrapper_content ul{
+ 	color: #434343;
+ 	list-style: none;
+ 	padding-left: 20px;
+ 	line-height: 1.4em;
+ }
+ .wrapper_content .about_ul li:before{
+ 	content: '– ';
+ }
+ /************************************************/
+.wrapper_content .birthday_ul {
+	list-style-image: url("images/mark.png");
+	font-weight: bold;
+	margin-left: 45px;
+	line-height: 2.4em;
+ 	font-style: italic;
+}
+.bold_p, .span_bold {
+	font-weight: bold;
+}
+
+/************************************************/
+.date_span {
+	color: grey;
+	margin-bottom: 15px;
+}
+.news1 {
+	text-align: center;
+	align-items: center;
+	font-size: 1.2em;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+.news1 a {
+	color: black;
+	text-decoration: none;
+	
+}
+.news1 a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+.news1 p {
+	text-align: center;
+}
+.news1 img {
+	padding-top: 10px;
+	margin-bottom: 50px;
+}
+hr {
+	border-color: lightgray;
+}
+.news1 .button{
+	color: white;
+	background-color: blue;
+}
+a.button:hover {
+	background-color: orange;
+	text-decoration: none;
+	color: white;
+}
+#button_news:hover {
+	cursor:pointer;
+}
+.for_more{
+	display:none;
+}
+/*****************************************8*/
+.tables_wrap {
+	
+/*	justify-content: space-between;	*/
+}
+.tables {
+	display: flex;
+	margin: 0 10px;
+	justify-content: space-between;	
+}
+.second {
+	margin-right: 60px;
+	margin-left: 60px;
+}
+.evening p{
+	margin-top: 2px;
+	
+
+}
+table {
+	
+	border: 1px solid grey;
+	font-size: 0.3em;
+	text-align: center;
+	
+}
+th {border: 1px solid grey;}
+/* границы ячеек тела таблицы */
+td {border: 1px solid grey;}
+
+@media (min-width: 768px) and (max-width: 980px){
+.tables {
+		display: block;
+}
+.second {
+	margin:0;
+}
+table {
+	border: 1px solid grey;
+	font-size: 0.5em;
+	text-align: center;
+	margin: 0 auto;
+}
+.evening p{
+	text-align: center;
+}
+.table_price{
+	font-size: 0.7em;
+}
+.iw-modal-text-table {
+	font-size: 0.7em;	
+}
+
+}
+@media(min-width: 300px) and (max-width: 768px){
+.tables {
+		display: block;
+	}
+.second {
+	margin:0;
+}
+table {
+	border: 1px solid grey;
+	font-size: 0.5em;
+	text-align: center;
+}
+.evening p{
+	text-align: center;
+}
+.table_price{
+	font-size: 0.1em;
+}
+.imggirl {
+	width: 70%;
+	height: 70%;
+}
+.iw-modal-text-table {
+	font-size: 0.6em;	
+}
+
+}
+/*****************************************8*/
+/*price****************************************8*/
+.table_price{
+	font-size: 1.2em;
+}
+.tableRaw {
+	background-color: orange;
+}
+.colorraw {
+	background-color: lightblue;
+}
+.price_wrap {
+	padding-bottom: 20px;
+}
+/**********************************************************/
+.mini-gallery {
+	padding: 20px 0;
+	text-align: center;
+}
+.mini-gallery a img {
+margin-right: 30px;
+margin-bottom: 50px;
+}
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+.modal-photo-win a {
+	text-decoration: none;
+}
+.myBigSlides {
+  display: none;
+  text-align: center;
+}
+.myBigSlides img {
+	height: 500px;
+}
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev1 {
+	left: 0;
+}
+.prev1:hover,
+.next1:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.row:after {
+  content: "";
+  clear: both;
+
+}
+
+/* Six columns side by side */
+.column {
+	margin: 0 auto;
+float: left;
+width: 6.66%;
+}
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/****/
+.modal-photo-win{
+	opacity: 0; /*изначально этот блок должен быть прозрачным*/ 
+	background: rgba(0,0,0,0.7); /*задаём цвет фона*/
+	pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+ 	position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+	transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+.modal-photo-win:target {
+    opacity: 1; /*при клике окно становится видимым*/
+	pointer-events: auto; /*теперь по окну можно кликать мышкой*/
+	overflow-y: auto;
+}
+.modal-photo-wrapper {
+	margin:0 auto; /*выравниваем окно по центру по горизонтали*/
+	margin-top:5vh; /*отступ сверху можно задавать в px, % или vh*/
+	text-align: center;
+}
+.modal-close {
+    position:absolute;
+	top:0px; /*отступ сверху*/
+	right:11%; /*отступ справа*/
+    font-size: 35px; /*размер шрифта*/
+ }
+.modal-photo-inner {
+  text-align: center;
+}
+.modal-close:hover, .modal-close:focus {
+    cursor: pointer;
+}
+.modal-photo-header {
+	 padding: 15px;
+  	position:relative;
+}

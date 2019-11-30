@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("main.css") (min-width:481px) and (max-width:768px);
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Roboto";
+	background-image: url("images/body_bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	font-size: 16px;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+}
+a {
+	text-decoration: none;
+}
+.background1{
+	 width: 320px;
+	 height: 659px;
+	 /*display: none;*/
+}
+.left1, .right1 {
+	position: fixed;
+	z-index: -1;
+	top: 30%;
+}
+
+.left1 img, .left1 {
+	left: 0;
+}
+.right1 img, .right1 {
+	right: 0;
+}
+.left1 img, .right1 img {
+	position: absolute;
+	top: 0;
+}
+/**************************************************************/
+.social {
+	padding-top: 20px;
+	color: #793621;
+}
+.social a {
+	display: inline-block;
+}
+.social p {
+	float: left;
+	max-width: 170px;
+	margin-top: 5px;
+	margin-right: 6px;
+}
+.social_img {
+	width: 230px;
+	margin-left: auto;
+  	margin-right: 0;
+}
+
+.logo img {
+	width: 250px;
+	height: auto;
+}
+.information_head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	color: #793621;
+}
+.panel {
+	display: flex;
+}
+.telephone {
+	font-size: 1.5em;
+	margin: auto;
+}
+.row {
+	display: flex;
+}
+.row img {
+	height: 33px;
+	margin-right: 10px;
+}
+
+nav {
+	margin-bottom: 20px;
+}
+/*********************************/
+.menu {
+	list-style: none;
+	height: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	align-items: center;
+	justify-content: space-between;
+	letter-spacing: 0.06em;
+	text-align: center;
+}
+.menu li {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	margin-right: 3%;
+}
+
+.menu li a{
+	color: white;
+	position: relative;
+    display: block;
+    text-shadow: 1px 1px black;
+}
+.menu li:hover {
+	border: 1px solid white;
+}
+
+/*********************/
+.dropup {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+}
+.dropbtn {
+  display:none;
+  background-color: white;
+  color: white;
+  width: 404px;
+  height: 33px;
+  padding-top: 12px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  margin: 0  auto;
+  color: grey;
+
+}
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 404px;
+  z-index: 1;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+.dropup-content ul{
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+.dropup-content a:hover {
+	background-color: lightblue;
+}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+.dropbtn:hover {
+	background-color: lightgray;
+}
+
+
+
+/**************************************************************/
+.about_menu{
+	display: flex;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	list-style: none;
+	
+}
+.about_menu li{
+	width: 418px;
+	height: 55px;
+	text-align: center;
+	margin-right: 3px;
+	padding-top: 45px;
+}
+.about_menu li a{
+	color: white; 
+}
+
+.about_menu li.menu_item1 {
+	 background-image: url("images/team.png");
+	 background-repeat: no-repeat;
+	 background-position: center top;
+}
+.about_menu li.menu_item2 {
+	 background-image: url("images/reviews.png");
+	 background-repeat: no-repeat;
+	 background-position: center top;
+}
+.about_menu li.menu_item3 {
+	 background-image: url("images/school.png");
+	 background-repeat: no-repeat;
+	 background-position: center top;
+}
+.about_menu li a:hover{
+	color: black;
+}
+/**************************************************************/
+.wrapper_content{
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 20px;
+}
+
+.climbing{
+	display: flex;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.climbing p{
+	width: 70%;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+.climbing a{
+	
+}
+.wrapper_content{
+	background-color: white;
+	margin-top: 5px;
+}
+.button {
+	background-color: lightblue;
+    border-radius: 30px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-family: "Roboto";
+    width: 120px;
+	}
+
+.images_scrol{
+	position: relative;
+}
+.mySlides   {
+	text-align: center;
+}
+.images_scrol p.shadow  img{
+	text-align:center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 0.1%;
+  margin-top: -22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+ }
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover{
+	background-image: url(images/prev_hover.png);
+	background-repeat: no-repeat; 
+	background-position: center;
+	top: 50%;
+	padding: 1px;
+	margin-top: -22px;
+}
+
+.next:hover  {
+	background-image: url(images/next_hover.png);
+	background-repeat: no-repeat; 
+	background-position: center;
+	top: 50%;
+	padding: 1px;
+	margin-top: -22px;
+}
+
+#img1{
+	width: 90%;
+}
+
+/**************************************************************/
+.newsmain{
+	margin-top: 40px;
+	margin-bottom: 40px; 
+	border: 1px solid lightgrey;
+	height: 450px;
+	position: relative;
+}
+.inn_news{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	text-align: center;
+}
+.inn_news p{
+	text-align:center !important;
+}
+.news h1{
+	text-align: center;
+}
+.news_more {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+.news_more a {
+	color: black;
+}
+.news_more a:hover {
+	color: blue;
+}
+.news_more p {
+	margin-right: 10px;
+}
+.news_more img {
+	padding-top: 10px;
+	margin-bottom: 50px;
+}
+.news_more span {
+	display: block;
+	color: grey;
+}
+.inn_news .button {
+	padding: 15px 25px;
+}
+/**************************************************************/
+.vk {
+	height: 300px;
+	border: 2px solid black;
+
+}
+/**************************************************************/
+footer {
+	 background: #2e6ab2;
+}
+.navigation {
+	padding-top: 20px;
+	margin-bottom: 15px;
+	max-width: 960px;
+	margin: 0 auto;
+	
+}
+.footer_text {
+	text-align: center;
+	height: 40px;
+	font-size: 0.8em;
+	padding-top: 20px;
+}
+/**************************************************************/
+/**************************************************************/
+@media(min-width: 300px) and (max-width: 768px){
+.background1{
+	display: none;
+}
+.row {
+	display: none;
+}
+.panel{
+	display: block;
+	text-align: center;
+}
+header nav {
+	display: none;
+}
+.information_head {
+	text-align: center;
+	display: block;
+}
+.telephone {
+	margin-left:0px;
+}
+.dropbtn, .dropup{
+ display:block;
+}
+.about_menu{
+	display: block;
+}
+.about_menu li {
+	margin: 0 auto;
+	text-align: center;
+	height: 45px;
+	width: 100%;
+	padding-top: 0;
+	line-height: 45px;
+}
+.menu_item1{
+	background: #ffcd53;
+}
+.menu_item2{
+	background: #ff7748;
+}
+.menu_item3{
+	background: #4491fc;
+}
+.climbing {
+	display: block;
+	text-align: center;
+}
+.climbing p{
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+.news_more {
+	display: block;
+}
+.news_more img {
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+.inn_news h1 {
+	margin-top:-15%;
+}
+.newsmain{
+	height:550px;
+}
+} 
+/**********************8**********/
+@media (min-width: 768px) and (max-width: 980px){
+.body {
+	overflow-x:hidden;
+}
+.background1{
+	 width: 320px;
+	 height: 659px;
+	 /*display: none;*/
+	}
+.social {
+	padding: 20px;
+	margin-left: 35%; 
+}
+.information_head {
+	display: inline-block;
+	width: 60%;
+	margin: 0 auto;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.telephone {
+	margin: auto 0;
+}
+.panel {
+	justify-content: space-between;	
+}
+
+.dropbtn, .dropup {
+	display:block;
+}
+header nav {
+	display: none;
+}
+.dropbtn, .dropup{
+ display:block;
+}
+
+.climbing {
+	display: block;
+	text-align: center;
+}
+.climbing p{
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+.newsmain {
+	height: 650px;
+}
+.news h1{
+	font-weight: normal;
+}
+.news_more {
+	display: block;
+}
+
+.menu li a:hover{
+	color: orange;
+}
+}
+/**************************************************************/
+@media (min-width: 980px) and (max-width: 1200px){
+.background1 {
+	display: block;
+}
+}
+
+
+/**************************************************************/
+.iw-modal {
+	opacity: 0; /*изначально этот блок должен быть прозрачным*/ 
+	background: rgba(0,0,0,0.7); /*задаём цвет фона*/
+	pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+ 	position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+	transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+.iw-modal:target {
+    opacity: 1; /*при клике окно становится видимым*/
+	pointer-events: auto; /*теперь по окну можно кликать мышкой*/
+	 overflow-y: auto;
+}
+.iw-modal-wrapper {
+	margin:auto; /*выравниваем окно по центру по горизонтали*/
+	margin-top:25vh; /*отступ сверху можно задавать в px, % или vh*/
+}
+.iw-modal-btn{
+	color:  #793621 ;
+	text-decoration: underline;
+}
+.iw-close {
+    position:absolute;
+	top:0px; /*отступ сверху*/
+	right:11%; /*отступ справа*/
+    font-size: 35px; /*размер шрифта*/
+ }
+.iw-modal-text {
+  text-align: center;
+}
+.iw-close:hover, .iw-close:focus {
+    cursor: pointer;
+}
+.iw-modal-header {
+	 padding: 15px;
+  	position:relative;
+}
+.iw-modal-text-table {
+	font-size: 1em;
+	margin: auto;
+	background-color: white;
+	width: 80%;
+}
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/

@@ -1,0 +1,119 @@
+
+	
+			<div class="history">
+				<a href="index.html">Главная</a>
+				<span class="stick">/</span>
+				<p>Галлерея</p>
+			</div>
+			<div>
+				<h2>Фотогаллерея </h2>
+				<h3>Взрослые тренировки</h3>
+				<div class="mini-gallery">
+					<a href="#modal-photo"><img src="images/small_information_items_448.jpg" width="250px"></a>
+					<a href="#modal-photo"><img src="images/small_information_items_449.jpg" width="250px"></a>
+					<a href="#modal-photo"><img src="images/small_information_items_450.jpg" width="250px"></a>
+					<a href="#modal-photo"><img src="images/small_information_items_451.jpg" width="250px"></a>
+				</div>
+
+
+<div id="modal-photo" class="modal-photo-win">
+	<div class="modal-photo-wrapper">
+		<div class="modal-photo-header">
+			<a href="#close" title="Закрыть" class="modal-close">×</a>
+		</div>
+		<div class="modal-photo-inner">
+<div class="container">
+  <div class="myBigSlides">
+    <img src="images/information_items_448.jpg" >
+  </div>
+
+  <div class="myBigSlides">
+        <img src="images/information_items_448.jpg" >
+  </div>
+
+  <div class="myBigSlides">
+        <img src="images/information_items_449.jpg" >
+  </div>
+    
+  <div class="myBigSlides">
+        <img src="images/information_items_450.jpg" >
+  </div>
+
+  <div class="myBigSlides">
+        <img src="images/information_items_451.jpg">
+  </div>
+    
+  <div class="myBigSlides">
+        <img src="images/information_items_448.jpg">
+  </div>
+    
+  <a class="prev1" onclick="plusSlides1(-1)">❮</a>
+  <a class="next1" onclick="plusSlides1(1)">❯</a>
+
+  <div class="row ">
+    <div class="column">
+      <img class="demo cursor" src="images/small_information_items_448.jpg"  onclick="currentSlide1(1)"   >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/small_information_items_448.jpg"  onclick="currentSlide1(2)"  >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/small_information_items_449.jpg"  onclick="currentSlide1(3)"  >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/small_information_items_450.jpg"  onclick="currentSlide1(4)"  >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/small_information_items_451.jpg"  onclick="currentSlide1(5)"  >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/small_information_items_448.jpg"  onclick="currentSlide1(6)"  >
+    </div>
+</div>
+</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- <script>
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
+
+function showSlides1(n) {
+console.log("bubububu");
+  var i;
+  var slides = document.getElementsByClassName("myBigSlides");
+  var dots = document.getElementsByClassName("demo");
+   if (n > slides.length) {slideIndex1 = 1}
+  if (n < 1) {slideIndex1 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex1-1].style.display = "block";
+  dots[slideIndex1-1].className += " active";
+  captionText.innerHTML = dots[slideIndex1-1].alt;
+}
+</script> -->
+    
+				<!-- <div>
+					<a href=""><img src="images/information_items_448.jpg"></a>
+					<a href=""><img src="images/information_items_449.jpg"></a>
+					<a href=""><img src="images/information_items_450.jpg"></a>
+					<a href=""><img src="images/information_items_451.jpg"></a>
+				</div> -->
+			</div>
+		
